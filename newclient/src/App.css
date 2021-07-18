@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: rgb(37, 36, 36);
+    min-height: 100vh;
+}
+
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, crimson, royalblue)
+}
+
+/* *Spinner */
+.spinnercontainer {
+    width: 60px;
+    margin: 40px auto;
+}
+
+.spinner {
+    width: 100%
+}
+
+/* * NavBar */
+.navbar {
+    background-color: #1b1919;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.navbartitle {
+    font-size: 22px;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "Fira Code";
+}
+
+.navbarlinks {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.signuplink,
+.loginlink,
+.newblog {
+    text-decoration: none;
+    background: linear-gradient(to right, cornflowerblue, royalblue);
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 9999px;
+    width: 80px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Fira Code', monospace;
+}
+
+.userImg {
+    width: 30px;
+    height: 30px
+}
+
+/* *Signup form */
+.signuptitle,
+.logintitle {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+    margin: 20px 0px;
+}
+
+.signupform {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+}
+
+.signupconfirmpassword,
+.signuppassword,
+.signupemail,
+.signupusername,
+.loginusername,
+.loginpassword,
+.newblogtitle,
+.newblogdescription,
+.newblogfile {
+    outline: none;
+    border: none;
+    padding: 8px 10px;
+    font-family: "Fira Code";
+    background-color: rgb(26, 24, 24);
+    color: whitesmoke;
+    border-radius: 3px
+}
+
+.signupsubmit,
+.loginsubmit,
+.logout,
+.newblogsubmit,
+.editcancel {
+    width: 100px;
+    padding: 8px 12px;
+    background: linear-gradient(to right, rgb(224, 52, 86), crimson);
+    font-family: "Fira Code";
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 999999px;
+    color: whitesmoke;
+}
+
+.signupsubmit:active,
+.loginsubmit:active,
+.logout:active,
+.newblogsubmit:active {
+    background: linear-gradient(to right, rgb(224, 52, 86), crimson);
+}
+
+.signupmsg,
+.loginmsg,
+.newblogmsg {
+    text-align: center;
+    background: linear-gradient(to right, cornflowerblue, crimson);
+    width: 80%;
+    margin: auto;
+    padding: 4px 15px;
+    color: rgb(8, 8, 8);
+    border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+
+/* *Login Page */
+.loginform {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+}
+
+/* * User Page */
+.user {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+.userimgcontainer img {
+    display: block;
+    margin: auto;
+}
+
+.userinfo {
+    height: 120px;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.logout {
+    margin: 0px auto;
+}
+
+/* * New Blog Img */
+.newblogcontainer {
+    position: relative;
+}
+
+.newblogformcontainer {
+    position: absolute;
+    top: 0;
+    margin-top: 40px;
+    width: 100%
+}
+
+
+.newblog {
+    width: 90px;
+    font-family: "Fira Code";
+}
+
+.newblogheading {
+    text-align: center;
+    font-size: 26px;
+    padding: 10px 0px;
+    color: whitesmoke;
+    font-family: 'Fira Code', monospace;
+}
+
+.newblogimg {
+    opacity: 0.1;
+    width: 100%;
+    height: 88vh;
+    padding: 15px
+}
+
+.newblogform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    width: 90%;
+    margin: auto
+}
+
+.newblogdescription {
+    resize: none;
+}
+
+.newblogkeywords {
+    display: flex;
+    justify-content: space-between
+}
+
+.newblogkeyword {
+    outline: none;
+    border: none;
+    padding: 8px 10px;
+    width: 250px;
+    font-family: "Fira Code";
+    background-color: rgb(26, 24, 24);
+    color: whitesmoke;
+    border-radius: 3px
+}
+
+.newblogfile {
+    cursor: pointer;
+}
+
+.newblogsubmit {
+    width: 150px
+}
+
+/* * HomePage */
+.blogscontainer {
+    padding: 20px 0px;
+}
+
+.blog {
+    background-color: rgb(27, 25, 25);
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.blogtitle,
+.blogdescription {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 25px;
+}
+
+.blogtitle {
+    font-size: 18px;
+    font-family: "Fira Code";
+    color: rgb(39, 79, 163);
+}
+
+.blogdescription {
+    font-size: 14px;
+    font-family: "Fira Code";
+    color: rgb(160, 160, 160);
+}
+
+.keywords {
+    display: flex;
+    font-family: "Fira Code";
+    justify-content: space-around;
+    padding: 10px;
+    color: crimson
+}
+
+.keyword {
+    font-size: 12px;
+}
+
+
+/* * Full Blog*/
+
+.fullblog {
+    width: 90%;
+    margin: 30px auto 0px;
+}
+
+.fullblogtitle {
+    text-align: center;
+    font-size: 48px;
+    font-family: "Source Code Pro";
+    color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+.fullblogkeywords {
+    color: crimson;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 13px;
+    font-family: "Fira Code";
+    background-color: #1b1919;
+}
+
+.fullblogdescription {
+    padding: 20px;
+    line-height: 1.8em;
+    font-family: "Fira Code";
+    background-color: #1b1919;
+    color: rgb(160, 160, 160);
+    word-break: break-all;
+    font-size: 14px;
+}
+
+.writtenby,
+.fullblogcreatedon {
+    font-size: 13px;
+    padding: 10px;
+    text-align: right;
+    font-family: "Fira Code";
+    background-color: #1b1919;
+    color: crimson;
+}
+
+.userblogstitle {
+    width: 90%;
+    margin: auto;
+    color: rgb(192, 176, 180);
+    font-size: 22px;
+    margin-top: 40px;
+    font-family: "Fira Code";
+}
+
+.userblog {
+    margin-bottom: 5px;
+}
+
+
+.editanddelete {
+    display: flex;
+    justify-content: space-around;
+}
+
+.editimgcontainer,
+.deleteimgcontainer {
+    background-color: #252424;
+    cursor: pointer;
+}
+
+.deleteimgcontainer {
+    outline: none;
+    border: none;
+}
+
+.editimg,
+.deleteimg {
+    width: 20px
+}
+
+
+/* * Edit Blog */
+
+.editbloglinks {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.editcancel {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Fira Code";
+    font-size: 14px;
+}
+
+
+
+/* * Media Queries */
+@media screen and (max-width: 768px) {
+    .user {
+        flex-direction: column;
+        height: 300px
+    }
+
+    .userimgcontainer {
+        margin: 30px 0px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .newblogform {
+        height: 500px
+    }
+
+    .newblogkeywords {
+        flex-direction: column;
+        height: 150px;
+        justify-content: space-around;
+    }
+
+    .newblogkeyword {
+        width: 100%
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .fullblogkeywords {
+        flex-direction: column;
+    }
+}

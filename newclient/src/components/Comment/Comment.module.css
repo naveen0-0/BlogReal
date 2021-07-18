@@ -1,0 +1,31 @@
+.comment {
+    width: 90%;
+    min-height: 140px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(15, 15, 15);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.commentusername {
+    color: orange;
+    font-family: "Monolisa Light";
+    font-size: 14px;
+}
+
+.commenttext {
+    font-size: 14px;
+    font-family: "Monolisa Light";
+    color: whitesmoke;
+    word-wrap: break-word;
+}
+
+.commentCreatedOn {
+    font-family: "Monolisa Light";
+    color: crimson;
+    font-size: 10px;
+}

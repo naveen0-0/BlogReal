@@ -1,0 +1,44 @@
+.commentstitle {
+    width: 90%;
+    margin: 20px auto 0px;
+    padding: 10px;
+    font-size: 24px;
+    color: whitesmoke;
+    font-family: "Fira Code";
+}
+
+.commentSection {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    outline: none;
+    border: none;
+    background-color: rgb(15, 15, 15);
+    resize: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: "Fira Code";
+}
+
+.commentsubmit {
+    width: 90%;
+    margin: auto;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 999999999px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to bottom right, royalblue, cornflowerblue);
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
+}
+
+.commentsubmit:active {
+    background: linear-gradient(to bottom right, royalblue, salmon);
+}
+
+
+.containerrew {
+    padding-bottom: 30px;
+}

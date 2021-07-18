@@ -1,0 +1,122 @@
+.signupformcontainer {
+    display: flex;
+    margin-top: 40px;
+}
+
+.authen1container {
+    flex: 1;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authen1 {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.signupformcontainer {
+    flex: 1;
+}
+
+.signupform {
+    /* background-color: orange; */
+    width: 100%;
+}
+
+.signuptitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Monolisa";
+    padding-top: 20px;
+    color: whitesmoke;
+}
+
+.inputfields {
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    width: 80%;
+    margin: auto;
+}
+
+.username,
+.email,
+.password,
+.confirmPassword {
+    outline: none;
+    border: none;
+    padding: 10px 12px;
+    padding-left: 40px;
+    border-radius: 999999px;
+    font-family: 'Fira Code', monospace;
+    background-color: rgb(19, 18, 18);
+    color: whitesmoke;
+    width: 100%;
+}
+
+.signupbutton {
+    width: 100px;
+    border-radius: 99999px;
+    outline: none;
+    border: none;
+    background-color: cornflowerblue;
+    padding: 8px 12px;
+    font-family: 'Fira Code', monospace;
+    cursor: pointer;
+}
+
+.usernameContainer,
+.emailContainer,
+.passwordContainer {
+    position: relative;
+}
+
+.personicon,
+.emailicon,
+.passwordicon {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: rgb(145, 145, 145);
+    font-size: 5px;
+}
+
+
+.personsvg,
+.locksvg {
+    width: 15px;
+    height: 15px;
+}
+
+.msg {
+    text-align: center;
+    border-radius: 9999999px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    font-family: "Monolisa";
+    font-size: 14px;
+    background: -webkit-linear-gradient(orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .authen1container {
+        display: none;
+    }
+
+    .signupformcontainer {
+        margin-top: 20px;
+    }
+}

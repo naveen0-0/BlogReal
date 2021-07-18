@@ -1,0 +1,32 @@
+.likesanddislikesContainer {
+   width: 90%;
+   margin: auto;
+   padding: 10px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.likeC,
+.dislikeC {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-width: 80px;
+   padding: 5px 10px;
+}
+
+.dislikeC {
+   align-items: flex-start;
+}
+
+.likeimg,
+.dislikeimg {
+   cursor: pointer;
+}
+
+
+.likes,
+.dislikes {
+   color: whitesmoke;
+}
